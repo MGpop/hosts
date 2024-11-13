@@ -1,4 +1,5 @@
 #!bin/bash
+#ceva
 cat /etc/hosts | while read line; do
 	ip=$(echo $line | awk '{print $1}')
 	hostname=$(echo $line | awk '{print $2}')
